@@ -29,9 +29,11 @@ public class Threads implements Runnable {
         }
     }
 
-    public void lower_priority() { thread.setPriority(Thread.MIN_PRIORITY); }
+    public void min_priority() {
+        thread.setPriority(Thread.MIN_PRIORITY);
+    }
 
-    public void increase_priority() {
+    public void max_priority() {
         thread.setPriority(Thread.MAX_PRIORITY);
     }
 }

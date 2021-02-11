@@ -18,7 +18,7 @@ public class Threads implements Runnable {
     @Override
     public void run() {
         while (is_running) {
-            change_slider_number(number);
+            synchronized (this){ slider.setValue(number); }
             try {
                 Thread.sleep(400);
             } catch (InterruptedException e) {
@@ -47,9 +47,5 @@ public class Threads implements Runnable {
             thread.setPriority(thread.getPriority() - 1);
             System.out.print(red("Priority of thread " + thread.getId() + " decreased to " + Integer.toString(thread.getPriority()) + "!"));
         }
-    }
-
-    private synchronized void change_slider_number(int num) {
-        slider.setValue(num);
     }
 }
