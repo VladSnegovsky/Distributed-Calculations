@@ -13,7 +13,15 @@ public class Competitions implements Runnable{
     }
 
     int determineWinner(Monk firstMonk, Monk secondMonk) {
-        return 0;
+        if (firstMonk.getEnergy() > secondMonk.getEnergy()) {
+            return 0;
+        }
+        else if (firstMonk.getEnergy() < secondMonk.getEnergy()) {
+            return 1;
+        }
+        else {
+            return (int) (Math.random() * 1);
+        }
     }
 
     @Override

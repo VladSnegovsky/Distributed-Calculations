@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class ListOfMonks {
     private final ArrayList<Monk> participants;
     private boolean winnerAnnounced = false;
+    private int first, last;
+
     lampord.LampordLock l;
 
     static private String red(String str){
@@ -10,6 +12,8 @@ public class ListOfMonks {
     }
 
     ListOfMonks(int[] energy, lampord.LampordLock _l) {
+//        this.first = 0;
+//        this.last = energy.length - 1;
         this.l = _l;
         int tempHalf = energy.length/2;
         participants = new ArrayList<>();

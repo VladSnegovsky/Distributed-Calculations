@@ -1,5 +1,6 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.time.Period;
+import java.util.concurrent.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -16,10 +17,15 @@ public class Main {
 //            System.out.println(monks.getMonksInfo(j));
 //        }
 
+//        ThreadPoolExecutor executor = new ThreadPoolExecutor(0, 3, 0L, TimeUnit.SECONDS, new SynchronousQueue<>());
 
         Competitions competition1 = new Competitions(monks, "First Group");
         Competitions competition2 = new Competitions(monks, "Second Group");
         Competitions competition3 = new Competitions(monks, "Third  Group");
+
+//        executor.execute(competition1);
+//        executor.execute(competition2);
+//        executor.execute(competition3);
 
         l.register(competition1.thread);
         l.register(competition2.thread);
@@ -28,5 +34,7 @@ public class Main {
         competition1.thread.start();
         competition2.thread.start();
         competition3.thread.start();
+
+//        executor.shutdown();
     }
 }
