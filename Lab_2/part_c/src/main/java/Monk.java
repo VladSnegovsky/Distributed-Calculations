@@ -17,7 +17,6 @@ public class Monk {
     public void addWin() { this.Wins++; }
 
     public String getMonksInfo() {
-        return this.getName() + " [" + String.valueOf(this.getEnergy()) + "], "
-                + String.valueOf(this.getWins()) + " wins.";
+        return this.getName() + " [" + String.valueOf(this.getEnergy()) + "]";
     }
 }

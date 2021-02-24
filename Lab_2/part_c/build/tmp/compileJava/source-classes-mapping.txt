@@ -4,13 +4,13 @@ fixnumlock/FixnumLockException.java
  fixnumlock.FixnumLockException
 fixnumlock/AbstractFixnumLock.java
  fixnumlock.AbstractFixnumLock
-Monk.java
- Monk
-ListOfMonks.java
- ListOfMonks
 fixnumlock/FixnumLock.java
  fixnumlock.FixnumLock
-Main.java
- Main
 Competitions.java
  Competitions
+Monk.java
+ Monk
+Main.java
+ Main
+ListOfMonks.java
+ ListOfMonks
