@@ -7,11 +7,11 @@ public class TaskThread implements Runnable {
     final int[] line;
     final String name;
     private final int time;
-    private final CyclicBarrier waitGroup;
+    private final MyCyclicBarrier waitGroup;
     private TaskThread friend1;
     private TaskThread friend2;
 
-    TaskThread(int[] _line, String _name, int _time, CyclicBarrier _waitGroup) {
+    TaskThread(int[] _line, String _name, int _time, MyCyclicBarrier _waitGroup) {
         line = _line;
         time = _time;
         name = _name;
@@ -43,7 +43,7 @@ public class TaskThread implements Runnable {
 
             try { Thread.sleep(time* 1000L); } catch (InterruptedException e) { e.printStackTrace(); }
             System.out.println("Thread " + name + " is waiting.");
-            try { waitGroup.await(); } catch (InterruptedException e) { e.printStackTrace(); } catch (BrokenBarrierException e) { e.printStackTrace(); }
+            waitGroup.await();
             int sum1 = countCum(line);
             int sum2 = countCum(friend1.line);
             int sum3 = countCum(friend2.line);
