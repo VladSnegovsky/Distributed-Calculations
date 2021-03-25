@@ -1,10 +1,8 @@
 public class MyCyclicBarrier {
     private int parties;
-    private final int num;
 
     MyCyclicBarrier(int parties) {
         this.parties = parties;
-        this.num = parties;
     }
 
     synchronized void addPart() {

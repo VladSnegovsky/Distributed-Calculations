@@ -58,6 +58,8 @@ func createLine() [60]string {
 func main() {
 	lineLeft := createLine()
 	lineRight := createLine()
+	fmt.Println(lineLeft)
+	fmt.Println(lineRight)
 	//lineLeft[59] = "Right"
 	//lineRight[0] = "Left"
 	for {

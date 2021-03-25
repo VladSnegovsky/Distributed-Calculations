@@ -3,9 +3,9 @@ import java.util.concurrent.CyclicBarrier;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr1 = new int[]{1, 3, 7, 8, 4, 3, 8, 1, 2, 6}; //43
+        int[] arr1 = new int[]{1, 3, 7, 8, 4, 3, 8, 2, 1, 6}; //43
         int[] arr2 = new int[]{5, 2, 9, 0, 3, 4, 5, 7, 3, 5}; //43
-        int[] arr3 = new int[]{3, 9, 5, 7, 3, 0, 2, 6, 4, 4}; //43
+        int[] arr3 = new int[]{3, 9, 5, 7, 3, 0, 2, 4, 6, 4}; //43
         MyCyclicBarrier waitGroup = new MyCyclicBarrier(3);
 
         TaskThread taskThread1 = new TaskThread(arr1, "Thread1", 1, waitGroup);

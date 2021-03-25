@@ -18,7 +18,7 @@ public class Main {
         ThreadAddDeleteCity threadAddDeleteCity = new ThreadAddDeleteCity(graph);
         ThreadAddDeleteRoad threadAddDeleteRoad = new ThreadAddDeleteRoad(graph);
         ThreadChangeCost threadChangeCost = new ThreadChangeCost(graph);
-        ThreadGetCost threadGetCost = new ThreadGetCost(graph, "Los Angeles", "Kyiv");
+        ThreadGetCost threadGetCost = new ThreadGetCost(graph, "Lviv", "Kyiv");
         ThreadGetCost threadGetCost1 = new ThreadGetCost(graph, "Los Angeles", "London");
     }
 }

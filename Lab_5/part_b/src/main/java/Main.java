@@ -34,6 +34,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
         String[] arr1 = new String[]{"B", "A", "A", "C", "D", "D", "B", "C", "A", "D"};
         String[] arr2 = new String[]{"D", "B", "A", "C", "D", "A", "C", "C", "A", "B"};
         String[] arr3 = new String[]{"B", "C", "D", "B", "A", "D", "C", "A", "A", "B"};

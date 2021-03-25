@@ -3,11 +3,11 @@ Graph.java
  Graph
 ThreadChangeCost.java
  ThreadChangeCost
-Main.java
- Main
+ThreadGetCost.java
+ ThreadGetCost
 ThreadAddDeleteRoad.java
  ThreadAddDeleteRoad
 ThreadAddDeleteCity.java
  ThreadAddDeleteCity
-ThreadGetCost.java
- ThreadGetCost
+Main.java
+ Main
