@@ -1,4 +1,4 @@
-public class Hairdresser implements Runnable{
+public class    Hairdresser implements Runnable{
     private final Salon salon;
     private boolean isSleeping;
 

@@ -29,7 +29,8 @@ public class WorkerThread extends Thread {
             lock.readLock().unlock();
             try {
                 barrier.await();
-            } catch (InterruptedException | BrokenBarrierException ignored) { }
+            } catch (InterruptedException | BrokenBarrierException ignored) {
+            }
         }
     }
 }

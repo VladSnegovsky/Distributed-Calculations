@@ -60,8 +60,7 @@ func main() {
 	lineRight := createLine()
 	fmt.Println(lineLeft)
 	fmt.Println(lineRight)
-	//lineLeft[59] = "Right"
-	//lineRight[0] = "Left"
+	
 	for {
 		fmt.Println("New Attempt")
 		var waitGroup sync.WaitGroup

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <companies>
+        <company name="New Oppo">
+            <Software product="Laptop">
+                <price>10000</price>
+            </Software>
+            <Software product="Samsung Galaxy Book Flex Alpha">
+                <price> 1900 </price>
+            </Software>
+        </company>
+        <company name="Apple">
+            <Software product="MacBook Pro">
+                <price> 2500 </price>
+            </Software>
+            <Software product="Apple Watch Series 6">
+                <price> 500 </price>
+            </Software>
+        </company>
+        <company name="OnePlus">
+            <Software product="9 Pro">
+                <price>1400</price>
+            </Software>
+        </company>
+    </companies>
+</list>

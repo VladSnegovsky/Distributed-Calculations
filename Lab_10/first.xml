@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <companies>
+        <company name="Samsung">
+            <Software product="Note 12+">
+                <price> 1200 </price>
+            </Software>
+            <Software product="Samsung Galaxy Book Flex Alpha">
+                <price> 1900 </price>
+            </Software>
+        </company>
+        <company name="Apple">
+            <Software product="Iphone 12 Pro Max">
+                <price> 1200 </price>
+            </Software>
+            <Software product="MacBook Pro">
+                <price> 2500 </price>
+            </Software>
+            <Software product="Apple Watch Series 6">
+                <price> 500 </price>
+            </Software>
+        </company>
+        <company name="Hewlett Packard">
+            <Software product="HP Envy Laptop">
+                <price> 800 </price>
+            </Software>
+        </company>
+    </companies>
+</list>
